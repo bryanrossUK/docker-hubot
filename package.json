@@ -1,0 +1,16 @@
+{
+  "name": "hubot",
+  "version": "0.0.0",
+  "private": true,
+  "author": "hubot",
+  "description": "A simple helpful robot",
+  "dependencies": {
+    "hubot": "^2.10.0",
+    "hubot-help": "^0.1.1",
+    "hubot-diagnostics": "0.0.1",
+    "hubot-scripts": "^2.5.16"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}

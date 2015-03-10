@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Copy any user configuration
+cp -f /opt/hubot/conf/* /opt/hubot/
+
+# We must start hubot from its root directory
+cd /opt/hubot/
+
+# Ensure our dependencies are up to date
+echo "Running npm install..."
+npm install
+
+# Start hubot
+echo "Starting hubot..."
+exec hubot "$@"
