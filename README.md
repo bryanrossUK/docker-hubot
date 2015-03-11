@@ -28,9 +28,9 @@ Hubot>
 
 ## Changing basic configuration
 Hubot (and its plugins) are usually configured via environment variables.  For example:
-- HUBOT_NAME Hubot
-- HUBOT_ADAPTER shell
-- HUBOT_PORT 8080
+- `HUBOT_NAME=Hubot`
+- `HUBOT_ADAPTER=shell`
+- `HUBOT_PORT=8080`
 
 You can set these on the command line:
 ```
