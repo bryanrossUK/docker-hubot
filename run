@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 # Copy any user configuration
 cp -f /opt/hubot/conf/* /opt/hubot/
@@ -10,6 +10,9 @@ cd /opt/hubot/
 echo "Running npm install..."
 npm install
 
-# Start hubot
+# Start hubot (and restart it if it fails)
 echo "Starting hubot..."
-exec hubot "$@"
+while true
+do
+    hubot "$@"
+done
