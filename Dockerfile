@@ -22,7 +22,10 @@ WORKDIR /opt/hubot
 COPY package.json          /opt/hubot/package.json
 COPY external-scripts.json /opt/hubot/external-scripts.json
 COPY hubot-scripts.json    /opt/hubot/hubot-scripts.json
-RUN mkdir                 /opt/hubot/scripts
+RUN mkdir                  /opt/hubot/scripts
+
+# You can mount your own hubot scripts directory here
+VOLUME ["/opt/hubot/scripts"]
 
 # You can mount your own hubot config here
 VOLUME ["/opt/hubot/conf"]
