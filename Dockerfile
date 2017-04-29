@@ -2,7 +2,7 @@ FROM centos:7
 MAINTAINER Bryan Ross
 
 # Install Node.js
-RUN curl -sL https://rpm.nodesource.com/setup | bash -
+RUN curl -sL https://rpm.nodesource.com/setup_4.x | bash -
 RUN yum install -y nodejs
 
 # Bootstrap latest NPM version
