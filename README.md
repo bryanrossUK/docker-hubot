@@ -50,7 +50,6 @@ $ docker run -e -v <localpath>:/opt/hubot/conf -it hubot
 ```
 
 There are a few ways of adding new scripts:
-* You can list any scripts from the [hubot-scripts-catalog](http://hubot-script-catalog.herokuapp.com/) in a `hubot-scripts.json` file in your config directory.
 * You can load scripts from npm packages by adding them to a `external-scripts.json` file in your config directory.
 * You can include your own .coffee files in a `scripts` directory in your config directory.
 
